@@ -93,12 +93,14 @@ const createMenuSection = (data) => {
       listItem.appendChild(itemDescription);
       list.appendChild(listItem);
       itemImage.classList.add("image");
+      listItem.classList.add("section");
     });
     section.appendChild(list);
   } else {
     section.appendChild(para(data.content));
   }
 
+  section.classList.add("menu-section");
   return section;
 };
 

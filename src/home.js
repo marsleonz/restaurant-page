@@ -38,6 +38,7 @@ const createSection = (data) => {
   const section = document.createElement("div");
   section.appendChild(h2(data.title));
   section.appendChild(para(data.content));
+  section.classList.add("home-section");
   return section;
 };
 

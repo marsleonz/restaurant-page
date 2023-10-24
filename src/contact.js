@@ -23,7 +23,7 @@ const contactData = {
   stayConnected:
     "Follow us on social media to stay updated on our latest events, promotions, and menu additions.",
   directions:
-    "Find your way to [Your Restaurant Name] with our easy-to-follow directions from the nearest landmarks and major roads.",
+    "Find your way to Manik's Restaurant with our easy-to-follow directions from the nearest landmarks and major roads.",
 };
 
 const createContactSection = (title, content) => {
@@ -44,7 +44,7 @@ const createContactSection = (title, content) => {
   } else {
     section.appendChild(para(content));
   }
-
+  section.classList.add("section");
   return section;
 };
 
@@ -77,7 +77,7 @@ const contact = () => {
   contact.appendChild(
     createContactSection("Directions", contactData.directions)
   );
-
+  contact.classList.add("contact-section");
   return contact;
 };
 
